@@ -1,0 +1,24 @@
+@import '../../index.scss';
+
+button {
+  width: 80px;
+  height: 30px;
+  
+  background-color: $orange-color;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  opacity: 1;
+
+  border: none;
+  outline: none;
+  
+  color: $light-color;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    transition-duration: 0.8s;
+    -webkit-box-shadow: 1px 7px 14px -1px rgba(249,110,75,0.98); 
+    box-shadow: 1px 7px 14px -1px rgba(249,110,75,0.98);
+  }
+}

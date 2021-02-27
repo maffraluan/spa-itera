@@ -1,0 +1,165 @@
+@import '../index.scss';
+
+.bubbles {
+  display: flex;
+  position: relative;
+
+  .top-bubbles {
+    position: absolute;
+    right: 180px;
+    top: -170px;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    z-index: -1;
+    animation: downTo 2s;
+    transform: rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+
+    @keyframes downTo {
+      from { top: -200px; }
+      to { top: -170px; }
+    }
+  }
+
+  .right-bubbles {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    z-index: -1;
+    animation: rightTo 2s;
+
+    @keyframes rightTo {
+      from { right: -40px; }
+      to { right: 0px;}
+    }
+  }
+}
+
+.landing-page {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  z-index: 5;
+  .section-hello {
+  @include d-flex-row();
+  justify-content: space-between;
+  height: 500px;
+
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+
+      h1 {
+        font-size: 3.2em;
+        margin-left: 10px;
+
+        span:first-of-type {
+          color: $orange-color;
+        }
+
+        &:last-of-type {
+          padding-bottom: 30px;
+        }
+      }
+
+      .row {
+      @include d-flex-row();
+      align-items: center;
+
+        span {
+          font-size: 1.2em;
+          padding: 10px;
+          margin-left: 6px;
+        }
+      }
+
+      .btn {
+        padding: 8px;
+
+        a {
+          margin-left: 10px;
+          color: $orange-color;
+          text-decoration: none;
+
+          cursor: pointer;
+        }
+      }
+    }   
+  }
+
+  .right-column {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    width: 60%;
+  }
+}
+
+
+/* section-who-i-am */
+
+.section-who-i-am {
+  display: flex;
+  height: 500px;
+
+  .image-column {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .text-column {
+    width: 53%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      position: absolute;
+      top: 20;
+      right: 20px;
+      opacity: 0.2;
+    }
+
+    span {
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      font-size: 3.5em;
+
+      span {
+        color: $orange-color;
+      }
+    }
+
+    p {
+      line-height: 30px;
+    }
+
+    a {
+      margin-top: 10px;
+      color: $orange-color;
+      text-decoration: none;
+
+      cursor: pointer;
+    }
+  }
+}
