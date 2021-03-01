@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@use '../../scss/_abstracts' as *;
 
 button {
   width: 80px;

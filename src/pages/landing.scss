@@ -1,4 +1,4 @@
-@import '../index.scss';
+@use '../scss/_abstracts' as *;
 
 .bubbles {
   display: flex;
@@ -52,9 +52,7 @@
   height: 500px;
 
     .left-column {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include d-flex-column-justify-center();
       width: 40%;
 
       h1 {
@@ -111,11 +109,9 @@
   height: 500px;
 
   .image-column {
-    width: 45%;
-    display: flex;
+    @include d-flex-center();
     align-items: center;
-    justify-content: center;
-
+    width: 45%;
 
     img {
       max-width: 400px;
@@ -125,12 +121,10 @@
   }
 
   .text-column {
+    @include d-flex-column-justify-center();
     width: 53%;
-    display: flex;
     position: relative;
-    flex-direction: column;
-    justify-content: center;
-
+    
     img {
       position: absolute;
       top: 20;
@@ -157,9 +151,6 @@
     a {
       margin-top: 10px;
       color: $orange-color;
-      text-decoration: none;
-
-      cursor: pointer;
     }
   }
 }
