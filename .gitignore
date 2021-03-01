@@ -1,3 +1,7 @@
-/node_modules/
+node_modules
 
-yarn-error.log
+build
+
+.env
+
+yarn-error

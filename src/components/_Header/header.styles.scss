@@ -12,15 +12,24 @@ nav {
     margin-right: 40px;
     font-weight: 600;
 
+    &:hover {
+      font-size: 1.9rem;
+      transition: 0.3s;
+    }
+
     span {
       color: $orange-color;
     }
   }
 
   a {
-    text-decoration: none;
     padding: 0 15px;
     font-size: 1.1rem;
     color: $dark-grey-color;
+
+    &:hover {
+      font-size: 1.4rem;
+      transition: 0.3s;
+    }
   }
 }

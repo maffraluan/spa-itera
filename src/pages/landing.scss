@@ -55,6 +55,19 @@
       @include d-flex-column-justify-center();
       width: 40%;
 
+      pre {
+      position: absolute;
+      left: 120px;
+      color: $dark-grey-color;
+
+      letter-spacing: -2px;
+      line-height: 135px;
+      font-weight: 800;
+      font-size: 12rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
       h1 {
         font-size: 3.2em;
         margin-left: 10px;
@@ -85,9 +98,6 @@
         a {
           margin-left: 10px;
           color: $orange-color;
-          text-decoration: none;
-
-          cursor: pointer;
         }
       }
     }   
@@ -106,12 +116,16 @@
 
 .section-who-i-am {
   display: flex;
-  height: 500px;
+  justify-content: center;
+  min-width: 1080px;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 20px;
 
   .image-column {
     @include d-flex-center();
     align-items: center;
-    width: 45%;
+    width: 48%;
 
     img {
       max-width: 400px;
@@ -122,14 +136,26 @@
 
   .text-column {
     @include d-flex-column-justify-center();
-    width: 53%;
+    width: 40%;
     position: relative;
+
+    pre {
+      position: absolute;
+      left: -90px;
+      color: $dark-grey-color;
+
+      font-weight: 800;
+      font-size: 10rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
     
     img {
       position: absolute;
-      top: 20;
-      right: 20px;
+      width: 400px;
+      right: -60px;
       opacity: 0.2;
+      z-index: -1;
     }
 
     span {
@@ -151,6 +177,124 @@
     a {
       margin-top: 10px;
       color: $orange-color;
+    }
+  }
+}
+
+/* My skills */
+.my-skills {
+  margin: 0 auto;
+  max-width: 1080px;
+  height: 500px;
+  position: relative;
+
+  .left-bubbles-skills {
+    position: absolute;
+    top: 50px;
+    left: -267px;
+    transform: rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+
+  .right-bubbles-skills {
+    position: absolute;
+    top: 50px;
+    right: -160px;
+    transform: rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+
+  .alinging-center {
+    @include d-flex-column-justify-center();
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+
+    .skills {
+      @include d-flex-column-justify-center();
+      width: 40%;
+      position: relative;
+
+      img {
+        position: absolute;
+        bottom: -20px;
+        width: 220px;
+        left: -60px;
+        opacity: 0.2;
+        z-index: -1;
+      }
+
+      pre {
+        position: absolute;
+        bottom: -90px;
+        right: -75px;
+        color: $dark-grey-color;
+
+        letter-spacing: -2px;
+        line-height: 120px;
+        font-weight: 800;
+        font-size: 10rem;
+        opacity: 0.1;
+        z-index: -1;
+      }
+
+      .span-absolute-position {
+        position: absolute;
+        top: -10px;
+        left: 112px;
+        letter-spacing: -2px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        span {
+          color: $orange-color;
+        }
+      }
+      p {
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+  }
+
+  template {
+    @include d-flex-row();
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    width: 100%;
+
+    div {
+      @include d-flex-column-justify-center();
+      padding: 6px 0;
+      h4 {
+        font-size: 1.6rem;
+        margin: 15px 0;
+
+        &:hover {
+          hr {
+            border: 2px solid $orange-color;
+          }
+        }
+
+          hr {
+          width: 40px;
+          border: 1px solid $orange-color;
+        }
+      }
+
+      span {
+        padding: 3px 0;
+      }
     }
   }
 }
