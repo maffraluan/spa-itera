@@ -1,4 +1,7 @@
 import { Button } from '../';
+
+import arrow from '../../assets/right.svg';
+
 function TemplateHelloJohn() {
   return (
     <div className={'left-column'}>
@@ -15,7 +18,10 @@ function TemplateHelloJohn() {
 
       <div className={'btn'}>
         <Button name="Say Hello" >Say hello</Button>
-        <a href="/about">About me</a>
+        <a href="/about">
+          About me
+           <img src={arrow} alt="Arrow" />
+        </a>
       </div>
     </div>
   )

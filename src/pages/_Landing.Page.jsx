@@ -1,4 +1,4 @@
-import { Header, Footer, TemplateSkill, TemplateHelloJohn, TemplateWhoIAm, TemplateExperience, TemplateBlog } from '../components';
+import { Header, Footer, TemplateSkill, TemplateHelloJohn, TemplateWhoIAm, TemplateExperience, TemplatePortfolio, TemplateBlog, TemplateTestimonial } from '../components';
 
 import human_ from '../assets/human_.svg';
 import bubbles from '../assets/bubbles.png';
@@ -45,6 +45,14 @@ export function Landing() {
         <img className={'left-bubbles-experience'} src={bubbles} alt="Bubbles" />
         <img className={'right-bubbles-experience'} src={bubbles} alt="Bubbles" />
         <TemplateExperience />
+      </section>
+
+      <section className={'section-portfolio'}>
+        <TemplatePortfolio />
+      </section>
+
+      <section className={'section-testimonials'}>
+        <TemplateTestimonial />
       </section>
 
       <section className={'section-blog'}>

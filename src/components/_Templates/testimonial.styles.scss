@@ -1,0 +1,131 @@
+@use '../../scss/_abstracts/' as *;
+
+.section-testimonials {
+  margin: 0 auto;
+  width: 80%;
+  height: 440px;
+  position: relative;
+
+  .testimonials {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+    .text-icon-flex {
+      display: flex;
+      align-items: center;
+
+      .align-rounded {
+        @include d-flex-row();
+        margin-left: 200px;
+        padding: 8px;
+
+        .rounded-arrow-left {
+          @include d-flex-center();
+          width: 40px;
+          height: 40px;
+          margin: 0 4px;
+          color: $light-color; 
+          border-radius: 50%;
+          background-color: $orange-color;
+
+        &:hover {
+          width: 45px;
+          height: 45px;
+          transition: 0.7s;
+        }
+
+        img {
+            width: 20px;
+            transform: rotate(180deg); 
+            -webkit-transform:rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);         
+          }
+        }
+
+        .rounded-arrow-right {
+          @include d-flex-center();
+          border: 1px solid $orange-color;
+          width: 40px;
+          height: 40px;
+          margin: 0 4px;
+          border-radius: 50%;
+          background-color: $light-color; 
+
+          &:hover {
+            width: 45px;
+            height: 45px;
+            transition: 0.7s;
+          }
+
+          img {
+            width: 20px;          
+          }
+        }
+      }
+    }
+
+    pre {
+      position: absolute;
+      color: $dark-grey-color;
+      right: 0;
+      top: 80px;
+      letter-spacing: -2px;
+      line-height: 150px;
+      font-weight: 800;
+      font-size: 12rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    .component-dotted {
+      position: absolute;
+      width: 300px;
+      top: -20px;
+      left: -80px;
+      opacity: 0.2;
+      z-index: 1;
+  }
+
+    .component-rounded {
+      position: absolute;
+      width: 500px;
+      left: -200px;
+      transform: rotate(180deg);
+      -webkit-transform:rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      z-index: -1;
+    }
+
+    .text-testimonials {
+      @include d-flex-column-justify-center();
+      width: 100%;
+      height: 100%;
+
+      span {
+          font-size: 0.9rem;
+          letter-spacing: -1px;
+        }
+
+        h1 {
+          font-size: 3rem;
+          .dot {
+            font-size: 3rem;
+            color: $orange-color;
+          }
+        }
+
+        p {
+          font-size: inherit;
+          font-weight: 400;
+          opacity: 0.8;
+          line-height: 40px;
+          width: 56%;
+        }
+    }
+  }
+}

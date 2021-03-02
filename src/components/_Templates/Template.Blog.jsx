@@ -5,6 +5,10 @@ import { Button } from '../';
 import plants_1 from '../../assets/plants_1.svg';
 import plants from '../../assets/plants.svg';
 import green_plants from '../../assets/green_plants.svg';
+import left from '../../assets/left.svg';
+
+
+import './blog.styles.scss';
 
 
 function TemplateBlog() {
@@ -24,7 +28,9 @@ function TemplateBlog() {
           <img src={green_plants} alt="Green Plant" />
         </div>
         <div className={'btn-articles'}>
-          <Button name="Read all articles">Read all articles</Button>
+          <Button name="Read all articles">Read all articles
+            <img src={left} alt="Arrow" />
+          </Button>
         </div>
       </div>
     </React.Fragment>

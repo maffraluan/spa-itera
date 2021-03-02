@@ -1,0 +1,85 @@
+@use '../../scss/_abstracts/' as *;
+
+.section-blog {
+  margin: 0 auto;
+  width: 80%;
+  height: 750px;
+  position: relative;
+
+  .blog {
+    @include d-flex-column-justify-center();
+    align-items: center;
+    margin: 100px 0;
+    position: relative;
+
+
+    pre {
+      position: absolute;
+      color: $dark-grey-color;
+
+      letter-spacing: -2px;
+      line-height: 150px;
+      font-weight: 800;
+      font-size: 12rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
+    .span-blog {
+      position: absolute;
+      top: -10px;
+      right: 50.6%;
+      font-size: 0.9rem;
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      .dot {
+        font-size: 3rem;
+        color: $orange-color;
+      }
+    }
+
+    p {
+      font-size: inherit;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+
+  .w-80 {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+    .blog-images {
+    @include d-flex-row();
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+
+      img {
+        width: 350px;
+        height: 350px;
+
+        &:hover {
+          opacity: 0.6;
+          width: 380px;
+          height: 380px;
+        }
+      }
+    }
+
+    .btn-articles {
+      @include d-flex-center();
+      margin-top: 30px;
+
+      img {
+        margin-left: 7px;
+        width: 10px;
+      }
+    }
+  }
+}

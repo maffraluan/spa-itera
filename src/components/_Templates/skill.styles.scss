@@ -1,0 +1,118 @@
+@use '../../scss/_abstracts/' as *;
+
+.my-skills {
+  margin: 0 auto;
+  width: 100%;
+  height: 800px;
+  position: relative;
+
+  .left-bubbles-skills {
+    position: absolute;
+    top: 50px;
+    left: -267px;
+    transform: rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+
+  .right-bubbles-skills {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transform: rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+
+  .alinging-center {
+    @include d-flex-column-justify-center();
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    .skills {
+      @include d-flex-column-justify-center();
+      width: 40%;
+      position: relative;
+
+      img {
+        position: absolute;
+        bottom: -20px;
+        width: 240px;
+        left: 0px;
+        opacity: 0.2;
+        z-index: -1;
+      }
+
+      pre {
+        position: absolute;
+        bottom: -90px;
+        right: -100px;
+        color: $dark-grey-color;
+
+        letter-spacing: -2px;
+        line-height: 120px;
+        font-weight: 800;
+        font-size: 10rem;
+        opacity: 0.1;
+        z-index: -1;
+      }
+
+      .span-absolute-position {
+        position: absolute;
+        top: -10px;
+        left: 180px;
+        letter-spacing: -2px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        span {
+          color: $orange-color;
+        }
+      }
+      p {
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+  }
+
+  template {
+    @include d-flex-row();
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    padding-bottom: 200px;
+    width: 100%;
+
+    div {
+      @include d-flex-column-justify-center();
+      padding: 6px 0;
+      h4 {
+        font-size: 1.6rem;
+        margin: 15px 0;
+
+        &:hover {
+          hr {
+            border: 2px solid $orange-color;
+          }
+        }
+
+          hr {
+          width: 40px;
+          border: 1px solid $orange-color;
+        }
+      }
+
+      span {
+        padding: 3px 0;
+      }
+    }
+  }
+}

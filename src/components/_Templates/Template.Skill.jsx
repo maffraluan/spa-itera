@@ -1,6 +1,7 @@
 import React from 'react';
 
 import dotted from '../../assets/dotted.png';
+import './skill.styles.scss';
 
 function TemplateSkill() {
   return (

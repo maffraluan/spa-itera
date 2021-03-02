@@ -1,6 +1,7 @@
 import React from 'react';
 
 import experience from '../../assets/experience.svg';
+import './experience.styles.scss';
 
 function TemplateExperience() {
   return (

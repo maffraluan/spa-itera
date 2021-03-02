@@ -1,0 +1,83 @@
+@use '../../scss/_abstracts/' as *;
+
+.experience {
+  margin: 0 auto;
+  width: 100%;
+  height: 750px;
+  position: relative;
+
+  .left-bubbles-experience {
+    position: absolute;
+    bottom: 50px;
+    left: -64px;
+    z-index: -1;
+    transform: rotate(160deg);
+    -webkit-transform:rotate(160deg);
+    -moz-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    -o-transform: rotate(160deg);
+  }
+
+  .right-bubbles-experience {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    z-index: -1;
+  }
+
+  .experience-absolute {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    position: relative;
+
+    pre {
+      position: absolute;
+      left: -100px;
+      top: -175px;
+      color: $dark-grey-color;
+
+      letter-spacing: -2px;
+      line-height: 150px;
+      font-weight: 800;
+      font-size: 12rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+  .text-experience {
+    margin-left: 20px;
+    span {
+      font-size: 0.9rem;
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      .dot {
+        font-size: 3rem;
+        color: $orange-color;
+      }
+    }
+
+    p {
+      font-size: inherit;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+
+  .image-experience {
+    @include d-flex-center();
+    height: auto;
+    padding: 30px 0;
+
+    img {
+      max-width: 600px;
+      max-height: 500px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  }
+}

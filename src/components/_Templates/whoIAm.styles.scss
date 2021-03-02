@@ -1,0 +1,74 @@
+@use '../../scss/_abstracts/' as *;
+
+.who-i-am {
+  margin: 0 auto;
+  width: 80%;
+  height: 750px;
+
+  .section-who-i-am {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+
+  .image-column {
+    @include d-flex-center();
+    align-items: center;
+    width: 48%;
+    margin-right: 20px;
+
+    img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .text-column {
+    @include d-flex-column-justify-center();
+    width: 40%;
+    position: relative;
+
+    pre {
+      position: absolute;
+      left: -120px;
+      color: $dark-grey-color;
+
+      font-weight: 800;
+      font-size: 10rem;
+      opacity: 0.1;
+      line-height: 140px;
+      z-index: -1;
+    }
+    
+    img {
+      position: absolute;
+      width: 400px;
+      right: -60px;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    span {
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      font-size: 3.5em;
+
+      span {
+        color: $orange-color;
+      }
+    }
+
+    p {
+      line-height: 30px;
+    }
+
+    a {
+      margin-top: 10px;
+      color: $orange-color;
+    }
+  }
+}
+}

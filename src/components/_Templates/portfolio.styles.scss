@@ -1,0 +1,116 @@
+@use '../../scss/_abstracts/' as *;
+
+.section-portfolio {
+  margin: 0 auto;
+  padding: 10% 0;
+  width: 80%;
+  height: auto;
+  position: relative;
+
+  .image-dotted {
+    position: absolute;
+    width: 380px;
+    top: 20px;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  pre {
+      position: absolute;
+      color: $dark-grey-color;
+      right: 80px;
+      top: -25px;
+      letter-spacing: -2px;
+      line-height: 150px;
+      font-weight: 800;
+      font-size: 12rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+  .w-80 {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    
+
+      .portfolio {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      
+      .section-right-column {
+        @include d-flex-column-justify-center();
+        span {
+          font-size: 0.9rem;
+          letter-spacing: -1px;
+        }
+
+        h1 {
+          font-size: 3rem;
+          .dot {
+            font-size: 3rem;
+            color: $orange-color;
+          }
+        }
+
+        p {
+          font-size: inherit;
+          font-weight: 400;
+          opacity: 0.8;
+        }
+      }
+      .section-left-column {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        a {
+          padding: 0 7px;
+          font-size: 1.1rem;
+          color: $dark-grey-color;
+
+          &:hover {
+            font-size: 1.4rem;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-images {
+    @include d-flex-column-justify-center();
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .upper-images {
+      img {
+        width: 340px;
+        height: 340px;
+        padding: 10px;
+
+        &:hover {
+          opacity: 0.6;
+          width: 380px;
+          height: 380px;
+        }
+      }
+    }
+
+    .btn-portfolio {
+      @include d-flex-center();
+      margin-top: 30px;
+
+      img {
+        margin-left: 7px;
+        width: 10px;
+      }
+    }
+  }
+}
