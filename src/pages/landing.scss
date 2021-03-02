@@ -44,7 +44,7 @@
 .landing-page {
   margin: 0 auto;
   width: 70%;
-  height: auto;
+  height: 650px;
   z-index: 5;
   .section-hello {
   @include d-flex-row();
@@ -61,7 +61,7 @@
       color: $dark-grey-color;
 
       letter-spacing: -2px;
-      line-height: 135px;
+      line-height: 150px;
       font-weight: 800;
       font-size: 12rem;
       opacity: 0.1;
@@ -114,18 +114,22 @@
 
 /* section-who-i-am */
 
-.section-who-i-am {
+.who-i-am {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+
+  .section-who-i-am {
   display: flex;
   justify-content: center;
-  min-width: 1080px;
-  height: auto;
-  margin-bottom: 20px;
-  padding: 20px;
+  width: 100%;
+
 
   .image-column {
     @include d-flex-center();
     align-items: center;
     width: 48%;
+    margin-right: 20px;
 
     img {
       max-width: 400px;
@@ -141,12 +145,13 @@
 
     pre {
       position: absolute;
-      left: -90px;
+      left: -120px;
       color: $dark-grey-color;
 
       font-weight: 800;
       font-size: 10rem;
       opacity: 0.1;
+      line-height: 140px;
       z-index: -1;
     }
     
@@ -180,12 +185,13 @@
     }
   }
 }
+}
 
 /* My skills */
 .my-skills {
   margin: 0 auto;
-  max-width: 1080px;
-  height: 500px;
+  width: 100%;
+  height: 800px;
   position: relative;
 
   .left-bubbles-skills {
@@ -202,7 +208,7 @@
   .right-bubbles-skills {
     position: absolute;
     top: 50px;
-    right: -160px;
+    right: 0;
     transform: rotate(360deg);
     -webkit-transform:rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -216,7 +222,6 @@
 
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
 
     .skills {
       @include d-flex-column-justify-center();
@@ -235,7 +240,7 @@
       pre {
         position: absolute;
         bottom: -90px;
-        right: -75px;
+        right: -100px;
         color: $dark-grey-color;
 
         letter-spacing: -2px;
@@ -271,6 +276,7 @@
     justify-content: center;
     gap: 40px;
     margin-top: 20px;
+    padding-bottom: 200px;
     width: 100%;
 
     div {
@@ -295,6 +301,167 @@
       span {
         padding: 3px 0;
       }
+    }
+  }
+}
+
+/* Experience */
+
+.experience {
+  margin: 0 auto;
+  width: 100%;
+  height: 650px;
+  position: relative;
+
+  .left-bubbles-experience {
+    position: absolute;
+    bottom: 0;
+    left: -64px;
+    z-index: -1;
+    transform: rotate(160deg);
+    -webkit-transform:rotate(160deg);
+    -moz-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    -o-transform: rotate(160deg);
+  }
+
+  .right-bubbles-experience {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    z-index: -1;
+  }
+
+  .experience-absolute {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    position: relative;
+
+    pre {
+      position: absolute;
+      left: -100px;
+      top: -175px;
+      color: $dark-grey-color;
+
+      letter-spacing: -2px;
+      line-height: 150px;
+      font-weight: 800;
+      font-size: 12rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+  .text-experience {
+    margin-left: 20px;
+    span {
+      font-size: 0.9rem;
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      .dot {
+        font-size: 3rem;
+        color: $orange-color;
+      }
+    }
+
+    p {
+      font-size: inherit;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+
+  .image-experience {
+    display: flex;
+    height: auto;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 600px;
+      max-height: 500px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  }
+}
+
+/* Blog */
+.section-blog {
+  margin: 0 auto;
+  width: 100%;
+  height: 750px;
+  position: relative;
+
+  .blog {
+    @include d-flex-column-justify-center();
+    align-items: center;
+    margin: 100px 0;
+    position: relative;
+
+    pre {
+      position: absolute;
+      color: $dark-grey-color;
+
+      letter-spacing: -2px;
+      line-height: 150px;
+      font-weight: 800;
+      font-size: 12rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
+    .span-blog {
+      position: absolute;
+      top: -10px;
+      right: 50.6%;
+      font-size: 0.9rem;
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      .dot {
+        font-size: 3rem;
+        color: $orange-color;
+      }
+    }
+
+    p {
+      font-size: inherit;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+
+  .w-80 {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+
+    .blog-images {
+    @include d-flex-row();
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+
+      img {
+        width: 350px;
+        height: 350px;
+      }
+    }
+
+    .btn-articles {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
     }
   }
 }

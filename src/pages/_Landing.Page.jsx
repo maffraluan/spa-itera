@@ -1,4 +1,4 @@
-import { Header, Footer, TemplateSkill, TemplateHelloJohn, TemplateWhoIAm } from '../components';
+import { Header, Footer, TemplateSkill, TemplateHelloJohn, TemplateWhoIAm, TemplateExperience, TemplateBlog } from '../components';
 
 import human_ from '../assets/human_.svg';
 import bubbles from '../assets/bubbles.png';
@@ -24,11 +24,13 @@ export function Landing() {
         </section>
 
       </div>
-      <section className={'section-who-i-am'} >
-        <div className={'image-column'}>
-          <img src={human_bubbles} alt="Human Bubbles" />
+      <section className={'who-i-am'} >
+        <div className={'section-who-i-am'}>
+          <div className={'image-column'}>
+            <img src={human_bubbles} alt="Human Bubbles" />
+          </div>
+          <TemplateWhoIAm />
         </div>
-        <TemplateWhoIAm />
       </section>
 
       <section className={'my-skills'}>
@@ -37,6 +39,16 @@ export function Landing() {
         <div className={'alinging-center'}>
           <TemplateSkill />
         </div>
+      </section>
+
+      <section className={'experience'}>
+        <img className={'left-bubbles-experience'} src={bubbles} alt="Bubbles" />
+        <img className={'right-bubbles-experience'} src={bubbles} alt="Bubbles" />
+        <TemplateExperience />
+      </section>
+
+      <section className={'section-blog'}>
+        <TemplateBlog />
       </section>
       <Footer />
     </div>

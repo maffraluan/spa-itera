@@ -1,0 +1,53 @@
+@use '../../scss/_abstracts' as *;
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 20px 20px 50px 20px;
+
+  background-color: $black-dark-color;
+
+  div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .image-rounded {
+      width: 80px;
+      height: 80px;
+      background-color: $light-color;
+      border-radius: 50%;
+      margin: 15px 0px 0px 0px;
+
+      img {
+        width: 76px;
+        height: 76px;
+      }
+    }
+    .getintouch {
+      color: $light-color;
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      color: $light-color;
+      letter-spacing: 1px;
+
+      span {
+        color: $orange-color;
+      }
+    }
+
+    p {
+      color: $light-color;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 30px;
+      width: 40.88%;
+      padding: 0 20px;
+      margin: 10px 0px 20px 0px;
+    }
+  }
+}
