@@ -48,6 +48,10 @@
       width: 40.88%;
       padding: 0 20px;
       margin: 10px 0px 20px 0px;
+
+      @media (max-width: #{$screen-xl-min}) {
+        width: 100%;
+      }
     }
   }
 }

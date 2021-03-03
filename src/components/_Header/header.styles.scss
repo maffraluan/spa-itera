@@ -33,3 +33,9 @@ nav {
     }
   }
 }
+
+ @media (max-width: 892px) {
+    nav {
+      display: none;
+    }
+  }

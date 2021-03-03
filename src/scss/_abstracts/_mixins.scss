@@ -14,3 +14,11 @@
   flex-direction: column;
   justify-content: center;
 }
+
+@mixin mt-10 {
+  margin-top: 10%; 
+}
+
+@mixin mb-10 {
+  margin-bottom: 10%;
+}

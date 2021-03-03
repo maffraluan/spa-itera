@@ -2,10 +2,16 @@
 
 .section-portfolio {
   margin: 0 auto;
-  padding: 10% 0;
   width: 80%;
-  height: auto;
+  height: 100%;
   position: relative;
+  padding-bottom: 30px;
+
+  @media (max-width: 460px) {
+    width: 100%;
+    height: auto;
+    margin: 5% 0 20% 0;
+  }
 
   .image-dotted {
     position: absolute;
@@ -14,6 +20,12 @@
     left: 0;
     opacity: 0.2;
     z-index: -1;
+
+    @media (max-width: 460px) {
+        width: auto;
+        left: 0;
+        right: 0;
+    }
   }
 
   pre {
@@ -27,6 +39,11 @@
       font-size: 12rem;
       opacity: 0.1;
       z-index: -1;
+
+      @media (max-width: 460px) {
+        left: -20px;
+        font-size: 8rem;
+      }
     }
 
   .w-80 {
@@ -68,6 +85,14 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
+        
+
+        @media (max-width: 460px) {
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          
+        }
 
         a {
           padding: 0 7px;
@@ -81,6 +106,22 @@
         }
       }
     }
+    @media (max-width: 892px) {
+      .portfolio {
+        flex-direction: column;
+
+        .section-right-column {
+          align-items: center;
+          padding-bottom: 20px;
+        }
+
+        .section-left-column {
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 
   .portfolio-images {
@@ -90,9 +131,13 @@
     height: 100%;
 
     .upper-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       img {
-        width: 340px;
-        height: 340px;
+        width: 380px;
+        height: auto;
         padding: 10px;
 
         &:hover {
@@ -101,6 +146,20 @@
           height: 380px;
         }
       }
+
+      @media (max-width: #{$screen-lg-min}) {
+          img {
+            width: 280px;
+            height: 280px;
+          }
+        }
+
+        @media (max-width: #{$screen-md-min}) {
+          img {
+            width: 220px;
+            height: 220px;
+          }
+        }
     }
 
     .btn-portfolio {

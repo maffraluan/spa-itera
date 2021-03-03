@@ -3,7 +3,8 @@
 .experience {
   margin: 0 auto;
   width: 100%;
-  height: 750px;
+  height: 100%;
+  padding-bottom: 30px;
   position: relative;
 
   .left-bubbles-experience {
@@ -16,6 +17,12 @@
     -moz-transform: rotate(160deg);
     -ms-transform: rotate(160deg);
     -o-transform: rotate(160deg);
+
+    @media (max-width: 460px) {
+      width: 90px;
+      z-index: 1;
+      bottom: 190px;
+    }
   }
 
   .right-bubbles-experience {
@@ -23,6 +30,12 @@
     right: 0;
     top: 150px;
     z-index: -1;
+
+    @media (max-width: 460px) {
+      width: 60px;
+      top: 40px;
+      z-index: -1;
+    }
   }
 
   .experience-absolute {
@@ -30,6 +43,11 @@
     width: 70%;
     height: auto;
     position: relative;
+
+    @media (max-width: 460px) {
+      width: 100%;
+      margin-top: 100%;
+    }
 
     pre {
       position: absolute;
@@ -43,6 +61,13 @@
       font-size: 12rem;
       opacity: 0.1;
       z-index: -1;
+
+      @media (max-width: 460px) {
+        left: 0;
+        top: 20px;
+        z-index: 1;
+        font-size: 8rem;
+      }
     }
 
   .text-experience {
@@ -77,6 +102,10 @@
       max-height: 500px;
       width: 100%;
       height: 100%;
+
+      @media (max-width: 460px) {
+        z-index: -2;
+      }
     }
   }
   }

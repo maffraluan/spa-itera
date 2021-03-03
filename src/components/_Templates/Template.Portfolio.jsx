@@ -45,12 +45,11 @@ function TemplatePortfolio() {
           <img src={headphone} alt="Headephone" />
           <img src={fruit} alt="Fruit" />
           <img src={cup_glass} alt="Cup Glass" />
-        </div>
-        <div className={'upper-images'}>
           <img src={cherry} alt="Cherry" />
           <img src={couch} alt="Couch" />
           <img src={orange} alt="Orange" />
         </div>
+
         <div className={'btn-portfolio'}>
           <Button name="Discover all works">
             Discover all works
