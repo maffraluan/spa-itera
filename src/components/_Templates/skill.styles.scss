@@ -22,6 +22,7 @@
     z-index: -1;
 
     @media (max-width: 460px) {
+      top: 100px;
       left: 0;
       width: 60px;
       transform: rotate(190deg);
@@ -45,6 +46,7 @@
 
     @media (max-width: 460px) {
       right: 0;
+      top: 100px;
       width: 80px;
       transform: rotate(360deg);
       -webkit-transform:rotate(360deg);

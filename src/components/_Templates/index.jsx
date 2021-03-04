@@ -5,3 +5,4 @@ export * from './Template.Portfolio';
 export * from './Template.Skill';
 export * from './Template.Testimonial';
 export * from './Template.WhoIAm';
+export * from './ParagraphyArray'

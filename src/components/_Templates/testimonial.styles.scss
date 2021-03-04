@@ -40,6 +40,7 @@
           color: $light-color; 
           border-radius: 50%;
           background-color: $orange-color;
+          cursor: pointer;
 
         &:hover {
           width: 45px;
@@ -64,7 +65,8 @@
           height: 40px;
           margin: 0 4px;
           border-radius: 50%;
-          background-color: $light-color; 
+          background-color: $light-color;
+          cursor: pointer;
 
           &:hover {
             width: 45px;
