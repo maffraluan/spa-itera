@@ -5,7 +5,7 @@
  You can access the site here: [ITERASPA](https://itera-spa.netlify.app/)
 
 ### Develop
-> `git clone && cd /registration-for` <br>
+> `git clone && cd /spa-itera` <br>
 > [yarn](https://yarnpkg.com/) install or [npm](https://www.npmjs.com/) install to download all the dependecies. <br>
 > `yarn start or npm start to run the app.`
 > If the project doesn't run well, install 'sass' dependencies as -D.
