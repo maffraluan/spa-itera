@@ -5,7 +5,7 @@ import './footer.styles.scss';
 
 function Footer() {
   return (
-    <div className={'footer'}>
+    <footer className={'footer'}>
       <div>
         <span className={'getintouch'}>Get in Touch</span>
         <h1>Let's Work Together<span>.</span></h1>
@@ -18,7 +18,7 @@ function Footer() {
 
         <Button name="johndoe@gmail.com">johndoe@gmail.com</Button>
       </div>
-    </div>
+    </footer>
   )
 }
 

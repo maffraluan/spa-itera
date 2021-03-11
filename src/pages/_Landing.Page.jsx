@@ -1,3 +1,4 @@
+import React from 'react';
 import { Header, Footer, TemplateSkill, TemplateHelloJohn, TemplateWhoIAm, TemplateExperience, TemplatePortfolio, TemplateBlog, TemplateTestimonial } from '../components';
 
 import human_ from '../assets/human_.svg';
@@ -8,7 +9,7 @@ import './landing.scss';
 
 export function Landing() {
   return (
-    <div>
+    <React.Fragment>
       <div className={'bubbles'}>
         <img className={'right-bubbles'} src={bubbles} alt="Bubbles" />
         <img className={'top-bubbles'} src={bubbles} alt="Bubbles" />
@@ -59,6 +60,6 @@ export function Landing() {
         <TemplateBlog />
       </section>
       <Footer />
-    </div>
+    </React.Fragment>
   )
 }

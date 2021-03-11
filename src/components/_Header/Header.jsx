@@ -4,7 +4,7 @@ import { Button } from '../'
 
 function Header() {
   return (
-    <div className={'header'}>
+    <header className={'header'}>
       <nav>
         <div>
           <h3>John Doe<span>.</span></h3>
@@ -18,7 +18,7 @@ function Header() {
 
         <Button name="contact">Contact</Button>
       </nav>
-    </div>
+    </header>
   )
 }
 
